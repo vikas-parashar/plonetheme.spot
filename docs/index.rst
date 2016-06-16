@@ -1,0 +1,5 @@
+====================
+plonetheme.spot
+====================
+
+User documentation

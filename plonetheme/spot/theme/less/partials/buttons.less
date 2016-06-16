@@ -1,0 +1,92 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+
+
+
+/* Type: Submit
+   ========================================================================== */
+
+
+.formControls{
+
+    input[type="submit"],
+    input[type="button"]{
+
+        background-color: @button-default;
+        font-size: 18px;
+        padding: 12px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        font-weight: 700;
+        margin-top: 10px;
+
+        &:hover,
+        &:focus{
+
+            background-color: darken(@button-default, 10%);
+            border: 0;
+            outline: 0;
+        }
+    }
+}
+
+.context{
+
+    background-color: @button-context;
+    font-size: 18px;
+    padding: 12px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 700;
+    margin-top: 10px;
+
+    &:hover,
+    &:focus{
+        background-color: darken(@button-context, 10%);
+        border: 0;
+        outline: 0;
+    }
+}
+
+.standalone{
+
+    background-color: @button-standalone;
+    color: @white-faded;
+    font-size: 18px;
+    padding: 12px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 700;
+    margin-top: 10px;
+
+    &:hover,
+    &:focus{
+        background-color: darken(@button-standalone, 10%);
+        border: 0;
+        outline: 0;
+    }
+}
+
+.destructive{
+
+    background-color: @button-destructive;
+    font-size: 18px;
+    padding: 12px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 700;
+    margin-top: 10px;
+
+    &:hover,
+    &:focus{
+        background-color: darken(@button-destructive, 5%);
+        border: 0;
+        outline: 0;
+    }
+}

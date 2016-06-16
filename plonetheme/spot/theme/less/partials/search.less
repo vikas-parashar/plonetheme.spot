@@ -1,0 +1,76 @@
+/* ==========================================================================
+   SEARCH PAGE and LIVE SEARCH
+   ========================================================================== */
+
+#portal-searchbox{
+    float: none;
+    max-height: 45px;
+}
+
+.LSBox{
+
+    .searchField{
+         background: transparent;
+         outline: 0;
+         border: 0;
+         box-shadow: none;
+         border-bottom: 2px solid @gray-light;
+         border-radius: 0;
+         // width: 18rem !important;
+
+         &:focus{
+            background-color: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid @border-live-search;
+         }
+    }
+
+    .search-icon{
+
+        padding: 10px 12px;
+        margin-top: -2px;
+        position: relative;
+        left: -35px;
+        background: transparent;
+        border: 0;
+
+        i{
+            color: @color-icon;
+        }
+
+        &:hover,
+        &:focus{
+
+            border: 0;
+            outline: none;
+            box-shadow: none;
+
+            i{
+                color: @white;
+            }
+        }
+    }
+
+    .searchSection{
+
+        position: relative;
+        right: 200px;
+        visibility: hidden;
+        top: -20px;
+    }
+    .show-searchSection{
+        visibility: visible !important;
+        top: 0 !important;
+    }
+
+    .livesearch-results{
+        border: 0px !important;
+        box-shadow: none !important;
+    }
+
+    input[type="text"]:focus{
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+

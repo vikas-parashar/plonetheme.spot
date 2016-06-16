@@ -1,0 +1,96 @@
+/* ==========================================================================
+   INPUTS
+   ========================================================================== */
+
+
+
+input[type='text'],
+input[type='password'],
+input[type='textarea'],
+input[type='number']{
+
+    height: 40px;
+    background-color: @gray-lightest;
+    color: contrast(@gray-lightest);
+    box-shadow: none;
+    font-size: 18px;
+    border-radius: 0;
+    border: 0;
+    outline: 1px solid @gray-lighter;
+
+    &:hover{
+        background-color: @gray-lightest;
+    }
+
+    &:focus{
+        background-color: @white;
+        color: @gray-darkest;
+        outline: 2px solid @gray-light;
+        box-shadow: none;
+
+    }
+}
+
+.field{
+
+    &.error{
+
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+
+        div:not([class="formHelp"]){
+            color: @red;
+        }
+
+        label{
+            color: @red;
+        }
+
+        input{
+            background-color: fade(@error, 30%);
+
+            &:focus{
+                background-color: @white;
+            }
+        }
+    }
+}
+
+
+/* -- checkbox styles ----------------------------------- */
+
+// input[type="checkbox"] {
+//     -webkit-appearance: none;
+//     width: 16px;
+//     height: 16px;
+//     position: relative;
+//     outline: medium none;
+//     margin-right: 10px;
+//     // border-radius: 10%;
+// }
+// input[type="checkbox"]::before {
+//     width: 16px;
+//     height: 16px;
+//     content: "";
+//     display: block;
+//     border: 2px solid @gray;
+//     // border-radius: 50%;
+//     position: absolute;
+// }
+
+// input[type="checkbox"]:checked::before {
+//     border-color: @color-checkbox;
+// }
+
+// input[type="checkbox"]:checked::after {
+//     width: 12px;
+//     height: 12px;
+//     content: "✔";
+//     display: block;
+//     // background: @color-checkbox;
+//     color: @color-checkbox;
+//     position: absolute;
+//     // left: 4px;
+//     // top: 4px;
+// }

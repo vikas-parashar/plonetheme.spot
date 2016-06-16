@@ -1,0 +1,46 @@
+/* ==========================================================================
+   ALERTS
+   ========================================================================== */
+
+
+
+
+.portalMessage{
+
+    box-shadow: none;
+    border-radius: 0;
+    text-shadow: none;
+
+    &.info{
+        background-color: @info;
+        border:0;
+
+        > strong:before,
+        > dt:before{
+
+        background-color: @info;
+        }
+    }
+
+    &.warning{
+        background-color: @warning;
+        border:0;
+
+        > strong:before,
+        > dt:before{
+
+        // background-color: @yellow;
+        }
+    }
+
+    &.error{
+        background-color: @error;
+        border:0;
+
+        > strong:before,
+        > dt:before{
+
+        background-color: @error;
+        }
+    }
+}
