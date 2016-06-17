@@ -19,7 +19,7 @@
         padding: 12px;
         border: 0;
         border-radius: 0;
-        box-shadow: none;
+        box-shadow: 0 2px 4px @gray;
         font-weight: 700;
         margin-top: 10px;
 
@@ -29,24 +29,24 @@
             background-color: darken(@button-default, 10%);
             border: 0;
             outline: 0;
+            box-shadow: 0 1px 4px @gray;
         }
     }
 }
 
 .context{
 
-    background-color: @button-context;
+    background-color: @button-context !important;
     font-size: 18px;
     padding: 12px;
-    border: 0;
+    border: 0 !important;
     border-radius: 0;
-    box-shadow: none;
     font-weight: 700;
     margin-top: 10px;
 
     &:hover,
     &:focus{
-        background-color: darken(@button-context, 10%);
+        background-color: darken(@button-context, 10%) !important;
         border: 0;
         outline: 0;
     }
@@ -54,38 +54,37 @@
 
 .standalone{
 
-    background-color: @button-standalone;
+    background-color: @button-standalone !important;
     color: @white-faded;
     font-size: 18px;
     padding: 12px;
-    border: 0;
+    border: 0 !important;
     border-radius: 0;
-    box-shadow: none;
     font-weight: 700;
     margin-top: 10px;
 
     &:hover,
     &:focus{
-        background-color: darken(@button-standalone, 10%);
+        background-color: darken(@button-standalone, 10%) !important;
         border: 0;
         outline: 0;
+        color: @white-faded;
     }
 }
 
 .destructive{
 
-    background-color: @button-destructive;
+    background-color: @button-destructive !important;
     font-size: 18px;
     padding: 12px;
     border: 0;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 0 !important;
     font-weight: 700;
     margin-top: 10px;
 
     &:hover,
     &:focus{
-        background-color: darken(@button-destructive, 5%);
+        background-color: darken(@button-destructive, 5%) !important;
         border: 0;
         outline: 0;
     }
