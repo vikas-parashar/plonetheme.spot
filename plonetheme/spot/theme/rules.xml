@@ -5,7 +5,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 
   <theme href="index.html"/>
-  <!-- <notheme if="$ajax_load" /> -->
+  <notheme if="$ajax_load" />
 
   <!-- Toolbar -->
   <before
@@ -78,6 +78,13 @@
           <i class="fa fa-search"></i>
       </button>
   </replace>
+<!--
+  <replace css:content="div.mobile-live-search #portal-searchbox input.searchButton">
+      <button class="search-icon">
+          <i class="fa fa-search"></i>
+      </button>
+  </replace> -->
+
   <!-- login link -->
   <after
       css:theme-children=".navbar-nav"
@@ -92,16 +99,33 @@
   </rules>
 
   <!-- Title and Slogan for site -->
-  <!-- <replace css:theme="#portal-slogan">
-    <div class="site-heading">
-      <h1>
-        <xsl:value-of select="$site_title"/>
-      </h1>
-      <hr class="small" />
-      <span id="portal-slogan" class="subheading"><xsl:value-of select="$slogan"/></span>
+  <replace css:theme="#slogan">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h1><xsl:value-of select="$site_title"/></h1>
+          <h2><xsl:value-of select="$slogan"/></h2>
+        </div>
+      </div>
     </div>
   </replace>
- -->
+
+  <!-- front-page wrap -->
+  <drop
+    css:theme="#headerwrap"
+    css:if-not-content=".section-front-page" />
+  <drop
+    css:theme="#headerwrap"
+    css:if-content=".template-edit" />
+  <drop
+    css:theme="#headerwrap"
+    css:if-content=".template-topbar-manage-portlets" />
+
+  <drop
+    css:theme="#blue"
+    css:if-content=".section-front-page" />
+
+
 
   <!-- Full-width breadcrumb -->
   <replace
@@ -171,31 +195,6 @@
       css:theme-children="#portal-footer-wrapper"
       css:content-children="#portal-footer-wrapper"
       />
-
-  <!-- Add Bootstrap message classes to Plone portalMessage classes -->
-  <!-- <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'success')] |//div//@class[contains(., 'success')]">
-      <xsl:attribute name="class">
-        <xsl:value-of select="." /> alert alert-success
-      </xsl:attribute>
-  </xsl:template>
-
-  <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'info')] | //div/@class[contains(., 'info')]">
-    <xsl:attribute name="class">
-      <xsl:value-of select="." /> alert alert-info
-    </xsl:attribute>
-  </xsl:template>
-
-  <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'error')]|//div//@class[contains(., 'error')]">
-    <xsl:attribute name="class">
-      <xsl:value-of select="." /> alert alert-danger
-    </xsl:attribute>
-  </xsl:template>
-
-  <xsl:template match="//aside[@id='global_statusmessage']//@class[contains(., 'warning')]|//div//@class[contains(., 'warning')]">
-    <xsl:attribute name="class">
-      <xsl:value-of select="." /> alert alert-warning
-    </xsl:attribute>
-  </xsl:template> -->
 
   <!-- add alert to invalid fields -->
   <xsl:template match="//div//@class[contains(., 'fieldErrorBox')]">

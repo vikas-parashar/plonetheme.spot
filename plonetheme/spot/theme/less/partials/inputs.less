@@ -4,9 +4,9 @@
 
 
 
-input[type='text'],
+input[type='text']:not(.searchField),
 input[type='password'],
-input[type='textarea'],
+textarea,
 input[type='number']{
 
     height: 40px;
@@ -57,40 +57,49 @@ input[type='number']{
     }
 }
 
+.pat-resourceregistry .input-sm{
 
-/* -- checkbox styles ----------------------------------- */
+    border-radius: 0 !important;
+    background-color: @gray-lightest !important;
+    color: contrast(@gray-lightest) !important;
+    outline: 1px solid @gray-lighter !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 4px !important;
 
-// input[type="checkbox"] {
-//     -webkit-appearance: none;
-//     width: 16px;
-//     height: 16px;
-//     position: relative;
-//     outline: medium none;
-//     margin-right: 10px;
-//     // border-radius: 10%;
-// }
-// input[type="checkbox"]::before {
-//     width: 16px;
-//     height: 16px;
-//     content: "";
-//     display: block;
-//     border: 2px solid @gray;
-//     // border-radius: 50%;
-//     position: absolute;
-// }
+    &:focus{
 
-// input[type="checkbox"]:checked::before {
-//     border-color: @color-checkbox;
-// }
+        background-color: @white !important;
+        color: @gray-darkest !important;
+        outline: 2px solid @gray-light !important;
+        box-shadow: none !important;
+        font-weight: 500;
+    }
+}
 
-// input[type="checkbox"]:checked::after {
-//     width: 12px;
-//     height: 12px;
-//     content: "✔";
-//     display: block;
-//     // background: @color-checkbox;
-//     color: @color-checkbox;
-//     position: absolute;
-//     // left: 4px;
-//     // top: 4px;
-// }
+select {
+
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid @blue;
+    border-radius: 0;
+}
+
+.select2-container{
+
+    border: 1px solid @blue;
+    border-radius: 0;
+    background: @gray-lighter;
+    outline: none;
+
+}
+
+.label{
+    color: @gray-darkest;
+}

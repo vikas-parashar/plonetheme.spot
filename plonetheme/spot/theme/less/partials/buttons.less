@@ -9,30 +9,33 @@
    ========================================================================== */
 
 
-.formControls{
 
-    input[type="submit"],
-    input[type="button"]{
+button.submit-widget,
+input[type="submit"],
+input[type="button"]{
 
-        background-color: @button-default;
-        font-size: 18px;
-        padding: 12px;
+    background-color: @button-default;
+    font-size: 18px;
+    padding: 12px;
+    border: 0;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 4px @gray;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: none;
+    color: @gray-darker;
+
+    &:hover,
+    &:focus{
+
+        background-color: darken(@button-default, 10%);
         border: 0;
-        border-radius: 0;
-        box-shadow: 0 2px 4px @gray;
-        font-weight: 700;
-        margin-top: 10px;
-
-        &:hover,
-        &:focus{
-
-            background-color: darken(@button-default, 10%);
-            border: 0;
-            outline: 0;
-            box-shadow: 0 1px 4px @gray;
-        }
+        outline: 0;
+        box-shadow: 0 1px 4px @gray;
+        color: @gray-darker;
     }
 }
+
 
 .context{
 
@@ -42,7 +45,8 @@
     border: 0 !important;
     border-radius: 0;
     font-weight: 700;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    color: @white !important;
 
     &:hover,
     &:focus{
@@ -52,6 +56,7 @@
     }
 }
 
+.plone-btn-primary,
 .standalone{
 
     background-color: @button-standalone !important;
@@ -61,7 +66,8 @@
     border: 0 !important;
     border-radius: 0;
     font-weight: 700;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    color: @white !important;
 
     &:hover,
     &:focus{
@@ -80,7 +86,8 @@
     border: 0;
     border-radius: 0 !important;
     font-weight: 700;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    color: @white !important;
 
     &:hover,
     &:focus{

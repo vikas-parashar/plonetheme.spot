@@ -33,19 +33,6 @@
     <!-- Page Header -->
     <header class="intro-header" id="intro-header">
       <div class="container">
-        <header id="portal-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <!-- <div  id="portal-slogan">
-                  <h1>Clean Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </header>
         <div id="anonymous-actions"></div>
       </div>
     </header>
@@ -53,7 +40,7 @@
     <div id="mainnavigation-wrapper">
       <div id="mainnavigation">
         <!-- Fixed navbar -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -61,17 +48,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-
-              <!-- <button type="button"
-                      class="navbar-toggle navbar-btn btn-search">
-                <span class="fa fa-search"></span>
-                <span class="sr-only">Toggle search</span>
-              </button> -->
+              <div class="hidden-lg hidden-sm mobile-live-search">
+                    <div id='portal-searchbox'>
+                    </div>
+              </div>
 
               <a class="navbar-brand" href="#"></a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-right search-box">
+              <ul class="nav navbar-right search-box hidden-sm hidden-xs">
                 <li>
                   <div id='portal-searchbox'>
                   </div>
@@ -87,24 +72,31 @@
 
             </div><!--/.nav-collapse -->
           </div>
-        </div>
+        </nav>
       </div>
     </div>
 
-    <div id="headerwrap">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-8 col-lg-offset-2">
-                <h1>It Doesn't Take a Rocket <b>Scientist</b></h1>
-                <h2>It Takes a Designer</h2>
-                </div>
-            </div><!-- row -->
-        </div><!-- container -->
-    </div><!-- headerwrap -->
+    <div id="wrap">
+      <div id="headerwrap">
+          <div id="slogan">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-8 col-lg-offset-2">
+                    <h1>It Doesn't Take a Rocket <b>Scientist</b></h1>
+                    <h2>It Takes a Designer</h2>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+          </div>
+      </div><!-- headerwrap -->
+    </div>
 
     <div id="above-content-wrapper">
       <div id="above-content">
       </div>
+    </div>
+    <div id="blue">
+      <h1 class="mainHeading"></h1>
     </div>
 
     <div class="container">
@@ -130,12 +122,15 @@
     </footer>
 
   <script>
-  $('.LSBox').hover(function(){
+  $('.search-box #portal-searchbox .LSBox').hover(function(){
     $('.searchSection').toggleClass('show-searchSection');
   });
-  // $('.LSBox').mouse(function(){
-  //   $('.searchSection').removeClass('show-searchSection');
-  // });
+
+   $(function(){
+    var $heading = $('.documentFirstHeading').clone().find('nav').remove().end();
+    $('#blue').html($heading);
+  });
+  // $("h1.mainHeading").text($("h1.documentFirstHeading").text());
   </script>
 
   </body>
