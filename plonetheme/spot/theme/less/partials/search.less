@@ -126,15 +126,15 @@
          box-shadow: none;
          border-bottom: 1px solid @gray-light;
          border-radius: 0;
-         color: @gray-darker;
+         color: @white;
          font-weight: 700;
          width: 100px;
          transition-property: width;
-        transition-duration: 100ms;
+        transition-duration: 200ms;
         transition-timing-function: ease;
 
          &:focus{
-            background-color: @white;
+            background-color: @bg-navbar-inverse;
             border-bottom: none !important;
             width: 100vw;
             position: absolute;
@@ -178,4 +178,13 @@
         box-shadow: none;
     }
 }
+}
+
+.searchPage .actionMenu dd{
+    z-index: 2;
+}
+
+input[type="submit"].searchPage{
+    padding: 8px;
+    font-size: 17px;
 }
