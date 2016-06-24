@@ -1,0 +1,12 @@
+{
+  "name": "plonetheme.spot",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-browser-sync": "^0.8.2",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
