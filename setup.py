@@ -7,7 +7,6 @@ from setuptools import setup
 
 long_description = '\n\n'.join([
     open('README.rst').read(),
-    open('CONTRIBUTORS.rst').read(),
     open('CHANGES.rst').read(),
 ])
 
@@ -25,14 +24,14 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
         "Operating System :: OS Independent",
-        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+        "License :: OSI Approved :: MIT License",
     ],
-    keywords='Python Plone',
+    keywords='Python Plone Theme <web></web>',
     author='Vikas Parashar',
     author_email='svnitvikas@gmail.com',
     url='https://pypi.python.org/pypi/plonetheme.spot',
-    license='GPL version 2',
-    packages=find_packages('src', exclude=['ez_setup']),
+    license='MIT License',
+    packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
     package_dir={'': 'src'},
     include_package_data=True,
