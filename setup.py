@@ -33,7 +33,6 @@ setup(
     license='MIT License',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
-    package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
