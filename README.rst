@@ -8,7 +8,7 @@ Spot
 
 A flat theme for Plone 5.
 
-.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.clean_blog/master/demo.jpg
+.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.spot/master/demo.png
 
 Installation
 ------------
