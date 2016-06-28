@@ -3,40 +3,24 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-plonetheme.spot
+Spot
 ==============================================================================
 
-Tell me what your product does
+A flat theme for Plone 5.
 
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+.. image:: https://raw.githubusercontent.com/vikas-parashar/plonetheme.clean_blog/master/demo.jpg
 
 Installation
 ------------
+
+Zip
+~~~~~~~~
+
+#. Download the `zip file`_
+#. Import the theme from the Diazo theme control panel.
+
+Buildout
+~~~~~~~~
 
 Install plonetheme.spot by adding it to your buildout::
 
@@ -51,22 +35,29 @@ Install plonetheme.spot by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Contribute
-----------
+Demo
+~~~~
 
-- Issue Tracker: https://github.com/collective/plonetheme.spot/issues
-- Source Code: https://github.com/collective/plonetheme.spot
-- Documentation: https://docs.plone.org/foo/bar
+   This theme can be seen in action at the following site:
 
+-  `Spot Theme Demo`_
 
-Support
--------
+Documentation
+-------------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
-
+Full documentation for end users can be found `here`_
 
 License
 -------
 
-The project is licensed under the GPLv2.
+MIT License
+
+Credit
+------
+
+Based on `Spot – Freelance & Agency Theme`_
+
+.. _zip file: https://github.com/vikas-parashar/plonetheme.spot/blob/master/plonetheme.spot.zip?raw=true
+.. _Spot – Theme Demo: http://107.170.136.197:8080/Plone
+.. _Spot Freelance & Agency Theme: http://blacktie.co/2013/10/spot-freelance-agency-theme/
+.. _here: https://github.com/vikas-parashar/plonetheme.spot/blob/master/docs/index.rst
