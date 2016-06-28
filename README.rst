@@ -59,5 +59,5 @@ Based on `Spot – Freelance & Agency Theme`_
 
 .. _zip file: https://github.com/vikas-parashar/plonetheme.spot/blob/master/plonetheme.spot.zip?raw=true
 .. _Spot Theme Demo: http://107.170.136.197:8080/spot
-.. _Spot – Freelance & Agency Theme: http://blacktie.co/2013/10/spot-freelance-agency-theme/
+.. _Spot – Freelance & Agency Theme: http://blacktie.co/2013/10/spot-freelance-agency-theme
 .. _here: https://github.com/vikas-parashar/plonetheme.spot/blob/master/docs/index.rst
