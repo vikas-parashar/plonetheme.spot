@@ -7,7 +7,7 @@ Changelog
 - Docs updated.
   [vikas-parashar]
 
-1.0a1 (unreleased)
+1.0a3 (2016-06-29)
 ------------------
 
 - Initial release.
