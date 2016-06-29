@@ -7,10 +7,10 @@ Changelog
 - Docs updated.
   [vikas-parashar]
 
-1.0a4 (unreleased)
+1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Image size reduced.
 
 
 1.0a3 (2016-06-29)
