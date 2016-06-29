@@ -7,8 +7,8 @@ Changelog
 - Docs updated.
   [vikas-parashar]
 
-1.1 (unreleased)
-------------------
+1.1 (2016-06-29)
+----------------
 
 - Image size reduced.
 
