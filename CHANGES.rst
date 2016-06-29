@@ -7,6 +7,12 @@ Changelog
 - Docs updated.
   [vikas-parashar]
 
+1.2 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 1.1 (2016-06-29)
 ----------------
 
